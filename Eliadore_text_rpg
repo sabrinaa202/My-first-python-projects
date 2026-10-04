@@ -8,66 +8,73 @@ print("""\nFor thousands of years,the island of Eliadore was protected by a sacr
 
 game = input("\nAre you ready for the Adventurous Journey? ")
 
-print(
-    "\n Diamond sword "
-    "\n Damage   : ██████████ 35%"
-    "\n Speed    : ██ 40% "
-    "\n Accuracy : █████ 65%"
-)
+if game.lower() == "yes":
 
-print(
-    "\n Golden sword "
-    "\n Damage     : █████ 28%"
-    "\n Speed      : █████ 60%"
-    "\n Accuracy   : ██████ 80%"
-)
+    print(
+        "\n Diamond sword "
+        "\n Damage   : ██████████ 35%"
+        "\n Speed    : ██ 40% "
+        "\n Accuracy : █████ 65%"
+    )
 
-print(
-    "\n Silver sword "
-    "\n Damage   : █████ 20%"
-    "\n Speed    : ███████ 75%"
-    "\n Accuracy : █████ 85%"
-)
+    print(
+        "\n Golden sword "
+        "\n Damage     : █████ 28%"
+        "\n Speed      : █████ 60%"
+        "\n Accuracy   : ██████ 80%"
+    )
 
-print(
-    "\n Bronze sword "
-    "\n Damage   : ███ 17%"
-    "\n Speed    : ██████████ 95%"
-    "\n Accuracy : ███████ 98%"
-)
+    print(
+        "\n Silver sword "
+        "\n Damage   : █████ 20%"
+        "\n Speed    : ███████ 75%"
+        "\n Accuracy : █████ 85%"
+    )
 
-sword = input("\n Choose your Sword⚔️ : ")
+    print(
+        "\n Bronze sword "
+        "\n Damage   : ███ 17%"
+        "\n Speed    : ██████████ 95%"
+        "\n Accuracy : ███████ 98%"
+    )
 
-if sword.lower() == "diamond sword":
-    damage = 35
-    speed = 40
-    accuracy = 65
+    sword = input("\n Choose your Sword⚔️ : ")
 
-elif sword.lower() == "golden sword":
-    damage = 25
-    speed = 60
-    accuracy = 80
+    if sword.lower() == "diamond sword":
+        damage = 35
+        speed = 40
+        accuracy = 65
+        print("Congratulation!!You have unlocked", sword)
 
-elif sword.lower() == "silver sword":
-    damage = 20
-    speed = 75
-    accuracy = 85
+    elif sword.lower() == "golden sword":
+        damage = 28
+        speed = 60
+        accuracy = 80
+        print("Congratulation!!You have unlocked", sword)
 
-elif sword.lower() == "bronze sword":
-    damage = 17
-    speed = 95
-    accuracy = 98
+    elif sword.lower() == "silver sword":
+        damage = 20
+        speed = 75
+        accuracy = 85
+        print("Congratulation!!You have unlocked", sword)
 
-else:
-    print("Invalid sword")
-    damage = 0
-    print("Congratulation!!You have unlocked", sword)
+    elif sword.lower() == "bronze sword":
+        damage = 17
+        speed = 95
+        accuracy = 98
+        print("Congratulation!!You have unlocked", sword)
 
-your_hp = 100
-your_speed = 55
-your_accuracy = 67
+    else:
+        print("Invalid sword")
+        print("Please restart the game and choose a valid sword.")
 
-print(f"""
+    if sword.lower() in ["diamond sword", "golden sword", "silver sword", "bronze sword"]:
+
+        your_hp = 100
+        your_speed = 55
+        your_accuracy = 67
+
+        print(f"""
 Your Hp={your_hp}/100
 Your speed={your_speed}
 Your Accuracy={your_accuracy}
@@ -75,25 +82,34 @@ Your Accuracy={your_accuracy}
 After you picked your sword from the swordsmith, after examining the heavy sword your heartbeat quickend and adrenaline surged through your veins. You took a deep breath,your grip on the sword tightned as you step beyond the kingdom gate an eerie silence surrounded you.No humans, no birds, not even a single animal was in sight.A sufforcating emptyness hovered over you. To examine the sorrounding better you walk in the more deeper area of thr kingdom.A loud rustling sound breaks the eerie silence. From afar two crimson eyes stare back at you from the darkness with a bloodstainedteeth formed a wicked smile. A SHADOW MONSTER has arrived
 """)
 
-monster_hp = 80
-monster_damage = 20
-monster_accuracy = 60
-monster_speed = 72
+        monster_hp = 80
+        monster_damage = 20
+        monster_accuracy = 60
+        monster_speed = 72
 
-Decision = input(
-    "What will you do?"
-    "\n 1. Attack"
-    "\n 2. Defend"
-    "\n 3. Run"
-    "\n Pick "
-)
-
-if Decision == "1":
-    print(
-        "\nYou charge towards the shadow monster.As you draw your sword towards him,the shadow monster emerges from the bushes. Its enornouse body towers over you.Its bloodshot eyes locked onto yours."
-    )
-
-    if Decision == "1":
-        print(
-            f"""\nMonster Hp={monster_hp}/80 Damage={monster_damage} Accuracy={monster_accuracy} Speed={monster_speed}"""
+        Decision = input(
+            "What will you do?"
+            "\n 1. Attack"
+            "\n 2. Defend"
+            "\n 3. Run"
+            "\n Pick "
         )
+
+        if Decision == "1":
+            print("\nYou charge towards the shadow monster.As you draw your sword towards him,the shadow monster emerges from the bushes. Its enornouse body towers over you.Its bloodshot eyes locked onto yours.")
+
+            print(
+                f"""\nMonster Hp={monster_hp}/80 Damage={monster_damage} Accuracy={monster_accuracy} Speed={monster_speed}"""
+            )
+
+        elif Decision == "2":
+            print("You defend yourself.")
+
+        elif Decision == "3":
+            print("You run.")
+
+        else:
+            print("Invalid choice.")
+
+else:
+    print("You are not ready for the Adventurous Journey.")
