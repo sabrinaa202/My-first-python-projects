@@ -1,0 +1,48 @@
+print("You and your friends were wondering around the abondend city to feel some aderline rush.You always heard many rumors but never really captured it in real life.After hours of wandering you finally reach to a house out of nowhere.The house was big,too queit too eerie to be real.You and your friend enter the house,the door was locked but the lock was too oxidozed and opened easily with few pushes.You went inside. The house was all empty,filled with nothingness and silence.Your friends got bored and decided to leave but suddenly one of your friend Jessie discovered something new.3 colourful doors.Even tho everything looked old in the house filled with dust but the door looks new,so new that you can even smell the paint.\n\n🚪 1. The Red Door \n🚪 2. The Black Door \n🚪 3. The White Door")
+
+door = input("Choose one ")
+
+if door == "1":
+    print("Jessica opens the door hesitantly,her hands shakes with anxiety of unknowing.When you open the door you expect something scary or even some jumpscare,but you found nothing.The room was empty with a weird smell.Not really smell of rotting flesh like the movies,or the smell of dust,just strong enough to smell but tooo hard to put a finger on.As you walk the floor breaneath creek in your weight.You aproach the only furniture in the room.A polished wooden table.In the table there was a photograph and a letter.The photograph looked really old and dust start to gather around it.Miah cleaned the photograph with her scarf. *It's a picture of your group.But something is wrong.The photograph is dated 1987*,Before you can even process the fact A loud bell gave us a heart-attack.Jeremiah screamed in terror.'Guys look at this'She said while.showing us the letter with a quevering hand.\n\n If youre reading this,you still havent been captured by the mystery of the forest.You still have time..RUN BEFORE THE 3RD BELL.\nAnother DONG.\n'Guys… we need to go. Now.' We rush back toward the red door, barely looking behind us. The forest seems to shift around us, and somewhere between the trees, we hear footsteps following.We reach the door.\n DONG.The third bell.\nWe throw ourselves through it.Suddenly, we're back inside the abandoned house.\n\nThe red door is gone.We don't stop to question it.We run outside and don't look back.We escaped. Somehow.We never looked back ever again.....")
+
+elif door == "2":
+    print("""\nThe black door opened with a loud creek as we pushed the door.The room was eerily quiet and dark.The door shut behind us with a loud thud,making us all alone in the room.The only source of light was limited to moonlight only barely reaching to the floor.It was enough to give us a rough picture of the room.The room was almost empty.A piano which grown dust over time,beside the piano there was a old clock most probably broken.Spider web spreaded in the wall and a wooden box placed right middle of the room,screaming for attention without the words by its bare placement only.Before we can sattle with the unnatural atmosphere the smell hit us like a blow.At first it was faint,but as we try to explore the room, the smell grew stronger trying to suffocate us.Smell of rot.'Maybe something rotting here.The house is closed for years.Must be infested with rats and other wild animals.',Jeremiah spoke.It sounded more like reassure to herself than us.We didnt reply.The room was screaming louder in queitness more than we can ever be.As i walked more deep in the room the rotting smell grew more and more suffocating.I noticed a trail of black ink..or its what seems like in that moment.I followed it hoping to find a way out of this.I followed the trail with flashlight of my phone,it was the only useful side of my phone as the forest is too deep to catch a signal.I frozed to my place as i saw the wall.
+    
+SOLVE BEFORE THE TIME RUNS OUT OR BECOME THE MYSTERY YOU CAME HERE TO SOLVE. 
+
+Before i can even react a loud tick tock sound echoed the room.I ran towards them.'We have to solve it immediately.Cant waste a minute over it.'I opened the box expecting some letters or some clue the only thing i saw it a ouija board.It started moving itself.
+   
+   W
+   E
+   L
+   C
+   O
+   M
+   E
+   
+The planchette stopped.
+Then, by itself, it moved again.
+THREE QUESTIONS.
+A pause.
+THREE ANSWERS.
+ONE WAY OUT 
+
+  FIRST QUESTION
+I speak without a mouth,
+I hear without ears.
+I have no body,
+but I come alive with the wind.
+What am I?""")
+
+    pick = input("The answer is ")
+
+    if pick.lower() == "echo":
+        print("Correct answer.")
+    else:
+        print("WRONG!!")
+
+elif door == "3":
+    print("The White Door")
+
+else:
+    print("Invalid choice.")
